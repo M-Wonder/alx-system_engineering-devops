@@ -1,2 +1,2 @@
 #!/bin/bash
-awk 'NR % 2 == 1'
+while read number; do [ $((number % 2)) -eq 1 ] && echo $number; done
